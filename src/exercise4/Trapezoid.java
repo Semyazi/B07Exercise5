@@ -77,9 +77,9 @@ public class Trapezoid {
     }
 
     public double area() {
-        Trapezoid stand = this.standardize;
+        Trapezoid stand = this.standardize();
 
-        double h = stand.getHeight;
+        double h = stand.getHeight();
         double dAB = stand.A.distance(stand.B);
         double dCD = stand.C.distance(stand.D);
 

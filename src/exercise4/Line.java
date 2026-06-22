@@ -1,6 +1,6 @@
 public class Line {
     Point A;
-    Point B
+    Point B;
 
     //No-Argument Constructor
     public Line() {
