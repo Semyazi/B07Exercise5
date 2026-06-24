@@ -1,3 +1,5 @@
+package exercise4;
+
 public class Line {
     Point A;
     Point B;
