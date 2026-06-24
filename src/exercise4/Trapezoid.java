@@ -1,3 +1,4 @@
+package exercise4;
 public class Trapezoid {
     Point A;
     Point B;
@@ -51,8 +52,12 @@ public class Trapezoid {
 
         else if(c.isParallel(d) && (this.B.distance(this.D) >= this.A.distance(this.C))) {
             return new Trapezoid(this.B, this.D, this.A, this.C);
+        }
+            
+        else{
+            throw new IllegalArgumentException("The given points cannot form a trapeoid.");
+            }
         }   
-    }
 
     //Find height using scalar projection and Pythagorean theorem
     public double getHeight() { 
