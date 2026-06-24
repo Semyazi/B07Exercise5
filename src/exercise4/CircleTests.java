@@ -10,14 +10,14 @@ class CircleTests {
 	void testPerimeter() {
 		Point p = new Point(1,1);
 		Circle c = new Circle(p, 3);
-		assertEquals(c.perimeter(), 6*Math.PI);
+		assertEquals(6*Math.PI, c.perimeter());
 	}
 
 	@Test
 	void testArea(){
 		Point p = new Point(1,1);
 		Circle c = new Circle(p, 3);
-		assertEquals(c.perimeter(), 9*Math.PI);
+		assertEquals(9*Math.PI, c.area());
 	}
 
 	@Test
@@ -26,7 +26,7 @@ class CircleTests {
 		Circle c1 = new Circle(p1, 3);
 		Point p2 = new Point(1,1);
 		Circle c2 = new Circle(p2, 3);
-		assertEquals(c1.equals(c2), true);
+		assertEquals(true, c1.equals(c2));
 
 
 	}
@@ -37,14 +37,14 @@ class CircleTests {
 		Circle c1 = new Circle(p1, 3);
 		Point p2 = new Point(1,1);
 		Circle c2 = new Circle(p2, 4);
-		assertEquals(c1.equals(c2), false);
+		assertEquals(false, c1.equals(c2));
 	}
 
 	@Test
 	void testHash(){
 		Point p1 = new Point(1,1);
 		Circle c1 = new Circle(p1, 3);
-		assertEquals(c1.hashCode(),24);
+		assertEquals(24, c1.hashCode());
 	}
 
 	@Test
@@ -52,7 +52,7 @@ class CircleTests {
 		Point centre = new Point(1,1);
 		Circle c1 = new Circle(centre, 3);
 		Point p1 = new Point (1,2);
-		assertEquals(c1.isInCircle(p1),true);
+		assertEquals(true, c1.isInCircle(p1));
 	}
 
 	@Test
@@ -60,7 +60,7 @@ class CircleTests {
 		Point centre = new Point(1,1);
 		Circle c1 = new Circle(centre, 3);
 		Point p1 = new Point (4,3);
-		assertEquals(c1.isInCircle(p1),false);
+		assertEquals(false, c1.isInCircle(p1));
 	}
 
 }
